@@ -1,0 +1,8 @@
+https://www.youtube.com/watch?v=h85_GT62K6A
+ng new _name
+prompt $$
+npm update -g @angular/cli
+npm update
+C:\project\StockExchanges> ng g c sign-up //create component
+C:\project\StockExchanges\src\app\shared> ng g s user // create service
+C:\project\StockExchanges> ng serve --open
