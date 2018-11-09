@@ -6,3 +6,4 @@ npm update
 C:\project\StockExchanges> ng g c sign-up //create component
 C:\project\StockExchanges\src\app\shared> ng g s user // create service
 C:\project\StockExchanges> ng serve --open
+Test

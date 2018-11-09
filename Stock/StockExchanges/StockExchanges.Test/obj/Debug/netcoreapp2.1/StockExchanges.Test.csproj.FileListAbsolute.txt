@@ -1,0 +1,9 @@
+C:\project\Stock\StockExchanges\StockExchanges.Test\bin\Debug\netcoreapp2.1\StockExchanges.Test.deps.json
+C:\project\Stock\StockExchanges\StockExchanges.Test\bin\Debug\netcoreapp2.1\StockExchanges.Test.dll
+C:\project\Stock\StockExchanges\StockExchanges.Test\bin\Debug\netcoreapp2.1\StockExchanges.Test.pdb
+C:\project\Stock\StockExchanges\StockExchanges.Test\obj\Debug\netcoreapp2.1\StockExchanges.Test.csprojAssemblyReference.cache
+C:\project\Stock\StockExchanges\StockExchanges.Test\obj\Debug\netcoreapp2.1\StockExchanges.Test.csproj.CoreCompileInputs.cache
+C:\project\Stock\StockExchanges\StockExchanges.Test\obj\Debug\netcoreapp2.1\StockExchanges.Test.AssemblyInfoInputs.cache
+C:\project\Stock\StockExchanges\StockExchanges.Test\obj\Debug\netcoreapp2.1\StockExchanges.Test.AssemblyInfo.cs
+C:\project\Stock\StockExchanges\StockExchanges.Test\obj\Debug\netcoreapp2.1\StockExchanges.Test.dll
+C:\project\Stock\StockExchanges\StockExchanges.Test\obj\Debug\netcoreapp2.1\StockExchanges.Test.pdb

@@ -1,0 +1,39 @@
+https://www.youtube.com/watch?v=h85_GT62K6A
+ng new _name
+prompt $$
+npm update -g @angular/cli
+npm update
+C:\project\StockExchanges> ng g c sign-up //create component
+C:\project\StockExchanges\src\app\shared> ng g s user // create service
+C:\project\StockExchanges> ng serve --open
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+sa | 321654
+add-migration CreateStockExchangesDb
+Remove-Migration
+
+update-database
+"DefaultConnection": "Server=DESKTOP-E565L04;Database=Trainning;User ID=sa;Password=321654;MultipleActiveResultSets=true"
+dotnet ef database update
+
+
+Cli installed both the global package and my project's local package.
+npm install -g @angular/cli@latest
+and
+npm install @angular/cli@latest
+
+npm install jquery --save
+npm install datatables.net --save
+npm install datatables.net-dt --save
+npm install angular-datatables --save
+npm install @types/jquery --save-dev
+npm install @types/datatables.net --save-dev
+
+if error: install npm
+npm install angular-datatables@6.0.0
+npm install @types/jquery --save-dev
+npm install @types/datatables.net --save-dev
+
+"DefaultConnection": "Server=DESKTOP-E565L04;Database=Trainning;User ID=sa;Password=321654;MultipleActiveResultSets=true"
