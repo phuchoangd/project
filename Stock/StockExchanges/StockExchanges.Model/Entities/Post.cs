@@ -27,6 +27,6 @@ namespace StockExchanges.Model
         [ForeignKey("CategoryId")]
         public virtual Category Category { get; set; }
 
-        //public virtual IEnumerable<Comment> Comments { get; set; }
+        public virtual IEnumerable<Comment> Comments { get; set; }
     }
 }

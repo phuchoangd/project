@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Entities\Comment.cs" />
     <Compile Remove="Entities\Member.cs" />
     <Compile Remove="Migrations\20181111120457_add_table_Comment.cs" />
     <Compile Remove="Migrations\20181111120457_add_table_Comment.Designer.cs" />

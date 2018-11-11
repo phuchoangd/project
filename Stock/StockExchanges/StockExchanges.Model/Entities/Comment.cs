@@ -7,7 +7,7 @@ using System.Text;
 namespace StockExchanges.Model
 {
     [Table("Comment")]
-    public class Comment : Entity<long>
+    public class Comment : AuditableEntity<long>
     {
         [MaxLength(256)]
         public string Title { get; set; }

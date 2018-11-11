@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StockExchanges.Model;
 
 namespace StockExchanges.Model.Migrations
 {
     [DbContext(typeof(StockExchangesContext))]
-    partial class StockExchangesContextModelSnapshot : ModelSnapshot
+    [Migration("20181111124035_add_table_comment")]
+    partial class add_table_comment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
