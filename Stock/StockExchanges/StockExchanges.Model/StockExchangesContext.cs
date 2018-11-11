@@ -9,11 +9,12 @@ namespace StockExchanges.Model
 {
     public class StockExchangesContext : DbContext
     {
-        public StockExchangesContext() : base()
+        
+        public StockExchangesContext(DbContextOptions<StockExchangesContext> options) : base(options)
         {
 
         }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-E565L04;Database=StockExchanges;User ID=sa;Password=321654;Trusted_Connection=True;");

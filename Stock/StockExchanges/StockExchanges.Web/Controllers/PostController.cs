@@ -7,6 +7,7 @@ using StockExchanges.Service;
 
 namespace StockExchanges.Web.Controllers
 {
+    [Route("api/[controller]")]
     public class PostController : Controller
     {
         private readonly IPostService _postService;
@@ -14,6 +15,7 @@ namespace StockExchanges.Web.Controllers
         {
             _postService = postService;
         }
+        [HttpGet("[action]")]
         public JsonResult GetAllPosts()
         {
             var news = _postService.GetAll();

@@ -58,11 +58,7 @@ import { PostService } from './shared/post.service';
       { path: 'category/:id', component:  CategoryComponent }
     ])
   ],
-  providers: [UserService, PostService, { provide: 'BASE_URL', useFactory: getBaseUrl }],
+  providers: [UserService, PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
-export function getBaseUrl() {
-  return document.getElementsByTagName('base')[0].href;
-}
