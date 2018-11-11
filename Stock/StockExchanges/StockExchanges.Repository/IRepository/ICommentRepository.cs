@@ -5,8 +5,8 @@ using System.Text;
 
 namespace StockExchanges.Repository
 {
-    public interface ICategoryRepository : IGenericRepository<Category>
+    public interface ICommentRepository : IGenericRepository<Comment>
     {
-        Category GetById(long id);
+        Comment GetById(long id);
     }
 }

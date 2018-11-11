@@ -14,9 +14,9 @@ namespace StockExchanges.Web.Controllers
         {
             _postService = postService;
         }
-        public JsonResult GetAllPosts(int category)
+        public JsonResult GetAllPosts()
         {
-            var news = _postService.GetAll().Where(c => c.CategoryId == category);
+            var news = _postService.GetAll();
             return Json(news);
         }
     }

@@ -7,14 +7,14 @@ using System.Text;
 
 namespace StockExchanges.Repository
 {
-    public class CategoryRepository : GenericRepository<Category>, ICategoryRepository
+    public class CommentRepository : GenericRepository<Comment>, ICommentRepository
     {
-        public CategoryRepository(DbContext context)
+        public CommentRepository(DbContext context)
               : base(context)
         {
 
         }
-        public Category GetById(long id)
+        public Comment GetById(long id)
         {
             return FindBy(x => x.Id == id).FirstOrDefault();
         }

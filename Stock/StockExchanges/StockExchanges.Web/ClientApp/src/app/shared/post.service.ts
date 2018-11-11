@@ -17,7 +17,7 @@ export class PostService {
     this._baseUrl = baseUrl;
   }
     public getAllPosts(){
-      this._httpClient.get(this._baseUrl + 'GetAllPost').subscribe(
+      this._httpClient.get(this._baseUrl + 'GetAllPosts').subscribe(
         (data: IPostModel[]) => {
           this.postModel = data
         },error => (error)

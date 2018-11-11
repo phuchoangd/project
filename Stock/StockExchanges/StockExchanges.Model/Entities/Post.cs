@@ -16,7 +16,7 @@ namespace StockExchanges.Model
         public string ShortDescription { get; set; }
 
         [Required]
-        [MaxLength(2048)]
+        [MaxLength(10000)]
         public string Content { get; set; }
 
         public string ThumbnailImage { get; set; }
