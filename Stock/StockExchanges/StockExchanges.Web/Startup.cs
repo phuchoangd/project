@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StockExchanges.Service;
 
 namespace StockExchanges.Web
 {
@@ -22,10 +23,18 @@ namespace StockExchanges.Web
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            //Add Dependency Injection
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
+            });
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "ClientManagement/dist";
             });
         }
 
@@ -52,6 +61,12 @@ namespace StockExchanges.Web
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
             });
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "admin",
+                    template: "admin/{controller}/{action=Index}/{id?}");
+            });
 
             app.UseSpa(spa =>
             {
@@ -59,6 +74,18 @@ namespace StockExchanges.Web
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
                 spa.Options.SourcePath = "ClientApp";
+
+                if (env.IsDevelopment())
+                {
+                    spa.UseAngularCliServer(npmScript: "start");
+                }
+            });
+            app.UseSpa(spa =>
+            {
+                // To learn more about options for serving an Angular SPA from ASP.NET Core,
+                // see https://go.microsoft.com/fwlink/?linkid=864501
+
+                spa.Options.SourcePath = "ClientManagement";
 
                 if (env.IsDevelopment())
                 {

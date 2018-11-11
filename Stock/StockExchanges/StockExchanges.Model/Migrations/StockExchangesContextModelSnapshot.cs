@@ -60,15 +60,25 @@ namespace StockExchanges.Model.Migrations
 
                     b.Property<string>("Content")
                         .IsRequired()
-                        .HasMaxLength(100);
+                        .HasMaxLength(2048);
+
+                    b.Property<string>("CreatedBy")
+                        .HasMaxLength(256);
+
+                    b.Property<DateTime>("CreatedDate");
 
                     b.Property<string>("ShortDescription")
                         .HasMaxLength(512);
 
                     b.Property<string>("Slug")
-                        .HasMaxLength(50);
+                        .HasMaxLength(256);
 
                     b.Property<string>("ThumbnailImage");
+
+                    b.Property<string>("UpdatedBy")
+                        .HasMaxLength(256);
+
+                    b.Property<DateTime>("UpdatedDate");
 
                     b.HasKey("Id");
 

@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Entities\Comment.cs" />
+    <Compile Remove="Entities\Member.cs" />
+    <Compile Remove="Migrations\20181111120457_add_table_Comment.cs" />
+    <Compile Remove="Migrations\20181111120457_add_table_Comment.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.4">

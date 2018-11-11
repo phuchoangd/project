@@ -19,6 +19,9 @@ update-database
 dotnet ef database update
 
 
+--Lib for UI
+https://mdbootstrap.com/md-bootstrap-cdn/
+
 Cli installed both the global package and my project's local package.
 npm install -g @angular/cli@latest
 and
