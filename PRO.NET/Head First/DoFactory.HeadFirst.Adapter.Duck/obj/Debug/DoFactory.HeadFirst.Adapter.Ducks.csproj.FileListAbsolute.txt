@@ -1,0 +1,6 @@
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Adapter.Duck\bin\Debug\DoFactory.HeadFirst.Adapter.Duck.exe.config
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Adapter.Duck\bin\Debug\DoFactory.HeadFirst.Adapter.Duck.exe
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Adapter.Duck\bin\Debug\DoFactory.HeadFirst.Adapter.Duck.pdb
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Adapter.Duck\obj\Debug\DoFactory.HeadFirst.Adapter.Ducks.csprojResolveAssemblyReference.cache
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Adapter.Duck\obj\Debug\DoFactory.HeadFirst.Adapter.Duck.exe
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Adapter.Duck\obj\Debug\DoFactory.HeadFirst.Adapter.Duck.pdb

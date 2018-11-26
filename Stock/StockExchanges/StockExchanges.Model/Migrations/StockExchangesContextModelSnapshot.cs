@@ -25,8 +25,6 @@ namespace StockExchanges.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long?>("CategoryId");
-
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(256);
 
@@ -44,8 +42,6 @@ namespace StockExchanges.Model.Migrations
                     b.Property<DateTime>("UpdatedDate");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
 
                     b.ToTable("Categories");
                 });
@@ -119,13 +115,6 @@ namespace StockExchanges.Model.Migrations
                     b.ToTable("Post");
                 });
 
-            modelBuilder.Entity("StockExchanges.Model.Category", b =>
-                {
-                    b.HasOne("StockExchanges.Model.Category")
-                        .WithMany("Categories")
-                        .HasForeignKey("CategoryId");
-                });
-
             modelBuilder.Entity("StockExchanges.Model.Comment", b =>
                 {
                     b.HasOne("StockExchanges.Model.Post", "Post")
@@ -137,7 +126,7 @@ namespace StockExchanges.Model.Migrations
             modelBuilder.Entity("StockExchanges.Model.Post", b =>
                 {
                     b.HasOne("StockExchanges.Model.Category", "Category")
-                        .WithMany()
+                        .WithMany("Posts")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

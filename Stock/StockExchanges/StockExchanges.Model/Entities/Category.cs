@@ -16,6 +16,6 @@ namespace StockExchanges.Model
         [Display(Name = "Description")]
         public string Description { get; set; }
 
-        public virtual IEnumerable<Category> Categories { get; set; }
+        public virtual IEnumerable<Post> Posts { get; set; }
     }
 }

@@ -17,7 +17,14 @@ export class PostComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.postModel = this._postService.getAllPosts();
+    this.getPosts();
+    
   }
-
+  getPosts(): void {
+    this._postService.getAllPosts().subscribe(
+      (data: IPostModel[]) => {
+        this.postModel = data
+      },error => (error)
+    );
+  }
 }

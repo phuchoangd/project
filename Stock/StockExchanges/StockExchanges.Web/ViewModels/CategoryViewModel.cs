@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace StockExchanges.Web.ViewModels
+namespace StockExchanges.Web
 {
     public class CategoryViewModel
     {

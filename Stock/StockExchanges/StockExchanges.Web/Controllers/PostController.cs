@@ -18,8 +18,17 @@ namespace StockExchanges.Web.Controllers
         [HttpGet("[action]")]
         public JsonResult GetAllPosts()
         {
-            var news = _postService.GetAll();
-            return Json(news);
+            var posts = _postService.GetAll()
+                        .Select(x => new PostViewModel
+                        {
+                            Id = x.Id,
+                            Content = x.Content,
+                            ShortDescription = x.ShortDescription,
+                            Slug = x.Slug,
+                            ThumbnailImage = x.ThumbnailImage,
+                            TotalComment = x.Comments != null ? x.Comments.Count() : 0
+                        });
+            return Json(posts);
         }
     }
 }

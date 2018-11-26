@@ -1,0 +1,10 @@
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\bin\Debug\DoFactory.HeadFirst.Combined.MVC.exe.config
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\bin\Debug\DoFactory.HeadFirst.Combined.MVC.exe
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\bin\Debug\DoFactory.HeadFirst.Combined.MVC.pdb
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\obj\Debug\DoFactory.HeadFirst.Combined.MVC.csprojResolveAssemblyReference.cache
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\obj\Debug\DoFactory.HeadFirst.Combined.MVC.BeatPanel.resources
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\obj\Debug\DoFactory.HeadFirst.Combined.MVC.BeatTextBox.resources
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\obj\Debug\DoFactory.HeadFirst.Combined.MVC.FormMain.resources
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\obj\Debug\DoFactory.HeadFirst.Combined.MVC.csproj.GenerateResource.Cache
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\obj\Debug\DoFactory.HeadFirst.Combined.MVC.exe
+E:\Project\Code\PRO.NET\PRO.NET\Head First\DoFactory.HeadFirst.Combined.MVC\obj\Debug\DoFactory.HeadFirst.Combined.MVC.pdb

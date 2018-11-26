@@ -1,0 +1,6 @@
+E:\Project\Code\PRO.NET\PRO.NET\Gang Of Four\DoFactory.GangOfFour.Abstract.NETOptimized\bin\Debug\DoFactory.GangOfFour.Abstract.NETOptimized.exe.config
+E:\Project\Code\PRO.NET\PRO.NET\Gang Of Four\DoFactory.GangOfFour.Abstract.NETOptimized\bin\Debug\DoFactory.GangOfFour.Abstract.NETOptimized.exe
+E:\Project\Code\PRO.NET\PRO.NET\Gang Of Four\DoFactory.GangOfFour.Abstract.NETOptimized\bin\Debug\DoFactory.GangOfFour.Abstract.NETOptimized.pdb
+E:\Project\Code\PRO.NET\PRO.NET\Gang Of Four\DoFactory.GangOfFour.Abstract.NETOptimized\obj\Debug\DoFactory.GangOfFour.Abstract.NETOptimized.csprojResolveAssemblyReference.cache
+E:\Project\Code\PRO.NET\PRO.NET\Gang Of Four\DoFactory.GangOfFour.Abstract.NETOptimized\obj\Debug\DoFactory.GangOfFour.Abstract.NETOptimized.exe
+E:\Project\Code\PRO.NET\PRO.NET\Gang Of Four\DoFactory.GangOfFour.Abstract.NETOptimized\obj\Debug\DoFactory.GangOfFour.Abstract.NETOptimized.pdb
