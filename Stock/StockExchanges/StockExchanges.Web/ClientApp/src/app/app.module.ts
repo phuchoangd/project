@@ -23,6 +23,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { CategoryComponent } from './category/category.component';
 import { PostService } from './shared/post.service';
+import { CategoryService } from './shared/category.service'
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { PostService } from './shared/post.service';
       { path: 'category/:id', component:  CategoryComponent }
     ])
   ],
-  providers: [UserService, PostService, { provide: 'BASE_URL', useFactory: getBaseUrl }],
+  providers: [UserService, PostService, CategoryService, { provide: 'BASE_URL', useFactory: getBaseUrl }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

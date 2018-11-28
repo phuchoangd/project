@@ -31,8 +31,13 @@ namespace StockExchanges.Web
             services.AddScoped<DbContext, StockExchangesContext>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IPostRepository, PostRepository>();
             services.AddTransient<IPostService, PostService>();
+            
+            //services.AddScoped<ICommentRepository, CommentRepository>();
+            //services.AddScoped<ICommentService, CommentService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 

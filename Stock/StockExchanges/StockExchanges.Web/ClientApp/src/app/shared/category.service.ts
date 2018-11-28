@@ -3,8 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable} from 'rxjs';
 
 @Injectable()
-export class PostService {
-
+export class CategoryService {
   private _httpClient: HttpClient;
   private _baseUrl: string;
 
@@ -15,7 +14,7 @@ export class PostService {
     this._httpClient = httpClient;
     this._baseUrl = baseUrl;
   }
-    getAllPosts(): Observable<any>{
-      return this._httpClient.get(this._baseUrl + 'api/Post/GetAllPosts');
-    }
+  getFeature(): Observable<any>{
+    return this._httpClient.get(this._baseUrl + 'api/Category/GetFeatures');
+  }
 }

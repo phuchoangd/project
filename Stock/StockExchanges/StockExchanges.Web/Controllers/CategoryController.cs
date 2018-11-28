@@ -7,6 +7,7 @@ using StockExchanges.Service;
 
 namespace StockExchanges.Web.Controllers
 {
+    [Route("api/[controller]")]
     public class CategoryController : Controller
     {
         private readonly ICategoryService _categoryService;
@@ -14,22 +15,23 @@ namespace StockExchanges.Web.Controllers
         {
             _categoryService = categoryService;
         }
+        [HttpGet("[action]")]
         public IActionResult GetAllCategories()
         {
             var categories = _categoryService.GetAll();
             return View();
         }
-        [HttpGet("action")]
+        [HttpGet("[action]")]
         public JsonResult GetFeatures()
         {
-            var features = _categoryService.GetAll().OrderBy(c => c.Id)
+            var features = _categoryService.GetAll()
                         .Take(4)
                         .Select(c => new FeatureModel
                         {
                             Id = c.Id,
                             Category = c.Name,
-                            Content = c.Posts.OrderByDescending(x => x.CreatedDate).FirstOrDefault().Content,
-                        }).Distinct();
+                            Content = c.Posts != null ? c.Posts.OrderByDescending(x => x.CreatedDate).FirstOrDefault().Content : "",
+                        });
             return Json(features);
         }
     }

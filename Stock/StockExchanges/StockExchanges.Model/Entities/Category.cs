@@ -6,6 +6,7 @@ using System.Text;
 
 namespace StockExchanges.Model
 {
+    [Table("Category")]
     public class Category : AuditableEntity<long>
     {
         [Required]

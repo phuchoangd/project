@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace StockExchanges.Web.Controllers
 {
+    [Route("api/[controller]")]
     public class CommentController : Controller
     {
 
