@@ -10,8 +10,8 @@ using StockExchanges.Model;
 namespace StockExchanges.Model.Migrations
 {
     [DbContext(typeof(StockExchangesContext))]
-    [Migration("20181111124754_alter_type_id_table_post")]
-    partial class alter_type_id_table_post
+    [Migration("20190501130008_Create_Database")]
+    partial class Create_Database
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,11 +23,9 @@ namespace StockExchanges.Model.Migrations
 
             modelBuilder.Entity("StockExchanges.Model.Category", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<long?>("CategoryId");
 
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(256);
@@ -37,8 +35,7 @@ namespace StockExchanges.Model.Migrations
                     b.Property<string>("Description");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(100);
+                        .IsRequired();
 
                     b.Property<string>("UpdatedBy")
                         .HasMaxLength(256);
@@ -47,14 +44,12 @@ namespace StockExchanges.Model.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("Categories");
+                    b.ToTable("Category");
                 });
 
             modelBuilder.Entity("StockExchanges.Model.Comment", b =>
                 {
-                    b.Property<long>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -64,13 +59,11 @@ namespace StockExchanges.Model.Migrations
                     b.Property<DateTime>("CreatedDate");
 
                     b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(1024);
+                        .IsRequired();
 
                     b.Property<int>("PostId");
 
-                    b.Property<string>("Title")
-                        .HasMaxLength(256);
+                    b.Property<string>("Title");
 
                     b.Property<string>("UpdatedBy")
                         .HasMaxLength(256);
@@ -90,22 +83,19 @@ namespace StockExchanges.Model.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<long>("CategoryId");
+                    b.Property<int>("CategoryId");
 
                     b.Property<string>("Content")
-                        .IsRequired()
-                        .HasMaxLength(2048);
+                        .IsRequired();
 
                     b.Property<string>("CreatedBy")
                         .HasMaxLength(256);
 
                     b.Property<DateTime>("CreatedDate");
 
-                    b.Property<string>("ShortDescription")
-                        .HasMaxLength(512);
+                    b.Property<string>("ShortDescription");
 
-                    b.Property<string>("Slug")
-                        .HasMaxLength(256);
+                    b.Property<string>("Slug");
 
                     b.Property<string>("ThumbnailImage");
 
@@ -121,13 +111,6 @@ namespace StockExchanges.Model.Migrations
                     b.ToTable("Post");
                 });
 
-            modelBuilder.Entity("StockExchanges.Model.Category", b =>
-                {
-                    b.HasOne("StockExchanges.Model.Category")
-                        .WithMany("Categories")
-                        .HasForeignKey("CategoryId");
-                });
-
             modelBuilder.Entity("StockExchanges.Model.Comment", b =>
                 {
                     b.HasOne("StockExchanges.Model.Post", "Post")
@@ -139,7 +122,7 @@ namespace StockExchanges.Model.Migrations
             modelBuilder.Entity("StockExchanges.Model.Post", b =>
                 {
                     b.HasOne("StockExchanges.Model.Category", "Category")
-                        .WithMany()
+                        .WithMany("Posts")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

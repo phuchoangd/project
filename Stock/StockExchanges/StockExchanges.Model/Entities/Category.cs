@@ -7,10 +7,9 @@ using System.Text;
 namespace StockExchanges.Model
 {
     [Table("Category")]
-    public class Category : AuditableEntity<long>
+    public class Category : AuditableEntity<int>
     {
         [Required]
-        [MaxLength(100)]
         [Display(Name = "Name")]
         public string Name { get; set; }
 
