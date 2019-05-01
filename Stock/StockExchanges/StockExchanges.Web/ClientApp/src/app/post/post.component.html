@@ -13,7 +13,7 @@
           <img class="img-fluid rounded z-depth-1 mb-3" src="assets/img/enterprise-blockchain.jpg" alt="blockchain" />
         </div>
         <div class="col-md-6 float-right">
-          <a [routerLink]='["/post"]' class="h4">{{(model.shortDescription.length>30)? (model.shortDescription | slice:0:30)+'...':(model.shortDescription)}}</a>
+          <a [routerLink]='["/post", model.id]' class="h4">{{(model.shortDescription.length>30)? (model.shortDescription | slice:0:30)+'...':(model.shortDescription)}}</a>
           <p class="grey-text">
             {{(model.content.length>75)? (model.content | slice:0:75)+'...':(model.content) }}
           </p>

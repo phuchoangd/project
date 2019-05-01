@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using StockExchanges.Service;
+using StockExchanges.Web.ViewModels;
 
 namespace StockExchanges.Web.Controllers
 {
@@ -29,6 +30,27 @@ namespace StockExchanges.Web.Controllers
                             TotalComment = x.Comments != null ? x.Comments.Count() : 0
                         });
             return Json(posts);
+        }
+
+        [HttpGet("[action]")]
+        public JsonResult Post(int id)
+        {
+            var post = _postService.GetById(id);
+            var result = new PostDetailViewModel
+            {
+                Id = post.Id,
+                Content = post.Content,
+                ShortDescription = post.ShortDescription,
+                Slug = post.Slug,
+                ThumbnailImage = post.ThumbnailImage,
+                Comments = post.Comments.Select(x => new CommentViewModel {
+                    Id = x.Id,
+                    PostId = x.PostId,
+                    Title = x.Title,
+                    Description = x.Description
+                })
+            };
+            return Json(result);
         }
     }
 }

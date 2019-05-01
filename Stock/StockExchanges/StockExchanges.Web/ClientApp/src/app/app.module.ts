@@ -7,11 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-
-import { UserService } from './shared/user.service';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
@@ -22,6 +18,8 @@ import { IntroComponent } from './intro/intro.component';
 import { FeatureComponent } from './feature/feature.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { CategoryComponent } from './category/category.component';
+
+import { UserService } from './shared/user.service';
 import { PostService } from './shared/post.service';
 import { CategoryService } from './shared/category.service'
 
@@ -30,8 +28,6 @@ import { CategoryService } from './shared/category.service'
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     SignUpComponent,
     SignInComponent,
     FooterComponent,
@@ -50,8 +46,6 @@ import { CategoryService } from './shared/category.service'
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: PostComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
       //UI
       { path: 'sign-up', component: SignUpComponent },
       { path: 'sign-in', component: SignInComponent },

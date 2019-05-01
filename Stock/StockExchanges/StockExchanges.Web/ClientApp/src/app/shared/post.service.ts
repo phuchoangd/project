@@ -9,13 +9,17 @@ export class PostService {
   private _baseUrl: string;
 
   constructor(
-    httpClient: HttpClient, 
+    httpClient: HttpClient,
     @Inject('BASE_URL') baseUrl: string
-    ) { 
+  ) {
     this._httpClient = httpClient;
     this._baseUrl = baseUrl;
   }
-    getAllPosts(): Observable<any>{
-      return this._httpClient.get(this._baseUrl + 'api/Post/GetAllPosts');
-    }
+  getPostById(id: number): Observable<any> {
+    return this._httpClient.get(this._baseUrl + 'api/Post/Post/' + id);
+  }
+
+  getAllPosts(): Observable<any> {
+    return this._httpClient.get(this._baseUrl + 'api/Post/GetAllPosts');
+  }
 }
