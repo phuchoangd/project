@@ -1,7 +1,31 @@
 <section class="py-5" id="post">
   <div class="container">
     <div class="wow fadeIn">
-
+      <div class="post-detail-content">
+        <h4 class="post-detail-title">{{postDetailModel.shortDescription}}</h4>
+        <div>
+          <p class="post-detail-text"><img src="" height="300" width="480" ALIGN="left" HSPACE="30" VSPACE="30"> {{postDetailModel.content}}</p>
+        </div>
+      </div>
+      <div class="post-detail-comment">
+        <form action="https://formspree.io/youremail@example.com" method="POST">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="md-form shadow-textarea">
+                <textarea class="md-textarea" id="message" name="message" placeholder="Write something here..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="center-on-small-only mb-4">
+            <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Submit</button>
+          </div>
+        </form>
+        <div *ngFor='let model of postDetailModel?.comments'>
+          <div class="comment-detail">
+            <span class="font-bold font-italic">{{model.title}} - </span><span class="font-italic">{{model.description}}</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

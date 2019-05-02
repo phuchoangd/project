@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./post-detail.component.css']
 })
 export class PostDetailComponent implements OnInit {
-  public postDetailModel: IPostDetailModel[];
+  public postDetailModel: IPostDetailModel;
   private _postService: PostService;
   private _route: ActivatedRoute;
   constructor(
@@ -26,7 +26,7 @@ export class PostDetailComponent implements OnInit {
   }
   getPostById(id: number): void {
     this._postService.getPostById(id).subscribe(
-      (data: IPostDetailModel[]) => {
+      (data: IPostDetailModel) => {
         this.postDetailModel = data
       }, error => (error)
     );

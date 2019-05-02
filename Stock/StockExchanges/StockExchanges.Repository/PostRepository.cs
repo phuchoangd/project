@@ -21,7 +21,7 @@ namespace StockExchanges.Repository
 
         public Post GetById(long id)
         {
-            return _dbset.Include(x => x.Category).Where(x => x.Id == id).FirstOrDefault();
+            return _dbset.Include(x => x.Category).Include(x=>x.Comments).Where(x => x.Id == id).FirstOrDefault();
         }
     }
 }

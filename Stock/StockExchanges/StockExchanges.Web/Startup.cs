@@ -67,10 +67,10 @@ namespace StockExchanges.Web
 
             app.UseMvc(routes =>
             {
-                routes.MapAreaRoute(
-                    name: "admin",
-                    areaName: "Admin",
-                    template: "Admin/{controller}/{action=Index}/{id?}");
+                //routes.MapAreaRoute(
+                //    name: "admin",
+                //    areaName: "Admin",
+                //    template: "Admin/{controller}/{action=Index}/{id?}");
 
                 routes.MapRoute(
                     name: "default",
@@ -89,18 +89,6 @@ namespace StockExchanges.Web
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
-            //app.UseSpa(spa =>
-            //{
-            //    // To learn more about options for serving an Angular SPA from ASP.NET Core,
-            //    // see https://go.microsoft.com/fwlink/?linkid=864501
-
-            //    spa.Options.SourcePath = "ClientManagement";
-
-            //    if (env.IsDevelopment())
-            //    {
-            //        spa.UseAngularCliServer(npmScript: "start");
-            //    }
-            //});
         }
     }
 }

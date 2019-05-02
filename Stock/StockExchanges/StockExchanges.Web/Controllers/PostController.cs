@@ -33,7 +33,7 @@ namespace StockExchanges.Web.Controllers
         }
 
         [HttpGet("[action]")]
-        public JsonResult Post(int id)
+        public JsonResult Detail(int id)
         {
             var post = _postService.GetById(id);
             var result = new PostDetailViewModel

@@ -1,11 +1,11 @@
 C:\project\Stock\StockExchanges\StockExchanges.Model\bin\Debug\netcoreapp2.1\StockExchanges.Model.deps.json
+C:\project\Stock\StockExchanges\StockExchanges.Model\bin\Debug\netcoreapp2.1\StockExchanges.Model.runtimeconfig.json
+C:\project\Stock\StockExchanges\StockExchanges.Model\bin\Debug\netcoreapp2.1\StockExchanges.Model.runtimeconfig.dev.json
 C:\project\Stock\StockExchanges\StockExchanges.Model\bin\Debug\netcoreapp2.1\StockExchanges.Model.dll
 C:\project\Stock\StockExchanges\StockExchanges.Model\bin\Debug\netcoreapp2.1\StockExchanges.Model.pdb
+C:\project\Stock\StockExchanges\StockExchanges.Model\obj\Debug\netcoreapp2.1\StockExchanges.Model.csprojAssemblyReference.cache
 C:\project\Stock\StockExchanges\StockExchanges.Model\obj\Debug\netcoreapp2.1\StockExchanges.Model.csproj.CoreCompileInputs.cache
 C:\project\Stock\StockExchanges\StockExchanges.Model\obj\Debug\netcoreapp2.1\StockExchanges.Model.AssemblyInfoInputs.cache
 C:\project\Stock\StockExchanges\StockExchanges.Model\obj\Debug\netcoreapp2.1\StockExchanges.Model.AssemblyInfo.cs
 C:\project\Stock\StockExchanges\StockExchanges.Model\obj\Debug\netcoreapp2.1\StockExchanges.Model.dll
 C:\project\Stock\StockExchanges\StockExchanges.Model\obj\Debug\netcoreapp2.1\StockExchanges.Model.pdb
-C:\project\Stock\StockExchanges\StockExchanges.Model\obj\Debug\netcoreapp2.1\StockExchanges.Model.csprojAssemblyReference.cache
-C:\project\Stock\StockExchanges\StockExchanges.Model\bin\Debug\netcoreapp2.1\StockExchanges.Model.runtimeconfig.json
-C:\project\Stock\StockExchanges\StockExchanges.Model\bin\Debug\netcoreapp2.1\StockExchanges.Model.runtimeconfig.dev.json

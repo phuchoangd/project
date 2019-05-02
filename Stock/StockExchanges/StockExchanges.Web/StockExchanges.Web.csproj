@@ -10,6 +10,8 @@
 
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>0924e505-68ef-4a63-9ecd-af0d933ecc89</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,8 +22,15 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientManagement\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientManagement\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ClientManagement\**" />
+    <None Remove="ClientManagement\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,7 +41,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Properties\Views\" />
     <Folder Include="ClientApp\src\app\admin\" />
   </ItemGroup>
 
