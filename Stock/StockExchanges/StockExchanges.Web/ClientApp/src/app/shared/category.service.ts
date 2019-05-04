@@ -17,4 +17,7 @@ export class CategoryService {
   getFeature(): Observable<any>{
     return this._httpClient.get(this._baseUrl + 'api/Category/GetFeatures');
   }
+  getCategoryById(id: number): Observable<any> {
+    return this._httpClient.get(this._baseUrl + 'api/Category/GetCategoryById?id=' + id);
+  }
 }

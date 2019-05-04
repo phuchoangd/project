@@ -1,0 +1,13 @@
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Web.Views.dll
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Web.Views.pdb
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Web.dll
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Service.dll
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Model.dll
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Repository.dll
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Web.pdb
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Service.pdb
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Model.pdb
+C:\project\Stock\StockExchanges\bin\Debug\StockExchanges.Repository.pdb
+C:\project\Stock\StockExchanges\obj\Debug\docker-compose.dcprojAssemblyReference.cache
+C:\project\Stock\StockExchanges\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\project\Stock\StockExchanges\obj\Debug\docker-compose.dcproj.CopyComplete

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  stockexchanges.web:
+    image: ${DOCKER_REGISTRY-}stockexchangesweb
+    build:
+      context: .
+      dockerfile: StockExchanges.Web\Dockerfile

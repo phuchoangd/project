@@ -43,7 +43,7 @@ namespace StockExchanges.Web.Controllers
                 ShortDescription = post.ShortDescription,
                 Slug = post.Slug,
                 ThumbnailImage = post.ThumbnailImage,
-                Comments = post.Comments.Select(x => new CommentViewModel {
+                Comments = post?.Comments.Select(x => new CommentViewModel {
                     Id = x.Id,
                     PostId = x.PostId,
                     Title = x.Title,

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using StockExchanges.Service;
+using StockExchanges.Web.ViewModels;
 
 namespace StockExchanges.Web.Controllers
 {
@@ -33,6 +34,28 @@ namespace StockExchanges.Web.Controllers
                             Content = c.Posts != null ? c.Posts.OrderByDescending(x => x.CreatedDate).FirstOrDefault().Content : "",
                         });
             return Json(features);
+        }
+
+        [HttpGet("[action]")]
+        public JsonResult GetCategoryById(int id)
+        {
+            var category = _categoryService.GetById(id);
+            var result = new CategoryViewModel
+            {
+                Id = category.Id,
+                Name = category.Name,
+                Description = category.Description,
+                Posts = category?.Posts.Select(x => new PostViewModel
+                {
+                    Id = x.Id,
+                    Content = x.Content,
+                    ShortDescription = x.ShortDescription,
+                    Slug = x.Slug,
+                    ThumbnailImage = x.ThumbnailImage,
+                    TotalComment = x.Comments != null ? x.Comments.Count() : 0
+                })
+            };
+            return Json(result);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace StockExchanges.Repository
         }
         public Category GetById(long id)
         {
-            return FindBy(x => x.Id == id).FirstOrDefault();
+            return _dbset.Include(x => x.Posts).Where(x => x.Id == id).FirstOrDefault();
         }
     }
 }

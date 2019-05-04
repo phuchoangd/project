@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, UrlHandlingStrategy } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
@@ -50,7 +50,7 @@ import { CategoryService } from './shared/category.service'
       { path: 'sign-up', component: SignUpComponent },
       { path: 'sign-in', component: SignInComponent },
       { path: 'post-detail/:id', component: PostDetailComponent },
-      { path: 'category/:id', component:  CategoryComponent }
+      { path: 'category/:id', component: CategoryComponent }
     ])
   ],
   providers: [UserService, PostService, CategoryService, { provide: 'BASE_URL', useFactory: getBaseUrl }],

@@ -1,0 +1,9 @@
+C:\project\Stock\StockExchanges\StockExchanges.Common\bin\Release\netcoreapp2.1\StockExchanges.Common.deps.json
+C:\project\Stock\StockExchanges\StockExchanges.Common\bin\Release\netcoreapp2.1\StockExchanges.Common.dll
+C:\project\Stock\StockExchanges\StockExchanges.Common\bin\Release\netcoreapp2.1\StockExchanges.Common.pdb
+C:\project\Stock\StockExchanges\StockExchanges.Common\obj\Release\netcoreapp2.1\StockExchanges.Common.csprojAssemblyReference.cache
+C:\project\Stock\StockExchanges\StockExchanges.Common\obj\Release\netcoreapp2.1\StockExchanges.Common.csproj.CoreCompileInputs.cache
+C:\project\Stock\StockExchanges\StockExchanges.Common\obj\Release\netcoreapp2.1\StockExchanges.Common.AssemblyInfoInputs.cache
+C:\project\Stock\StockExchanges\StockExchanges.Common\obj\Release\netcoreapp2.1\StockExchanges.Common.AssemblyInfo.cs
+C:\project\Stock\StockExchanges\StockExchanges.Common\obj\Release\netcoreapp2.1\StockExchanges.Common.dll
+C:\project\Stock\StockExchanges\StockExchanges.Common\obj\Release\netcoreapp2.1\StockExchanges.Common.pdb
