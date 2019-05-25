@@ -40,3 +40,18 @@ npm install @types/jquery --save-dev
 npm install @types/datatables.net --save-dev
 
 "DefaultConnection": "Server=DESKTOP-E565L04;Database=Trainning;User ID=sa;Password=321654;MultipleActiveResultSets=true"
+
+change "npm run build -- --prod" to "npm run build --prod" in .cproj
+npm uninstall --save-dev angular-cli
+npm install --save-dev @angular/cli@latest
+npm install
+
+--ng update @angular/cli --migrate-only --from=1.7.4
+
+when run local:
+"start": "ng serve",//--extract-css
+"build": "ng build",//--extract-css
+
+if error or not subcribe:
+npm audit fix
+

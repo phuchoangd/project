@@ -11,9 +11,9 @@ export class PostComponent implements OnInit {
   public postModel: IPostModel[];
   private _postService: PostService;
   constructor(
-    postService: PostService
+    commentService: PostService
   ) {
-      this._postService = postService;
+      this._postService = commentService;
    }
 
   ngOnInit() {

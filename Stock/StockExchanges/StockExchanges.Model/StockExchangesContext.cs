@@ -18,7 +18,7 @@ namespace StockExchanges.Model
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=phuchoangdinhdbserver.database.windows.net;Initial Catalog=phuchoangdinh_db;User ID=phuc-sa;Password=123456Abc;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
-            //Server=tcp:phuchoangdinhdbserver.database.windows.net,1433;Initial Catalog=phuchoangdinh_db;Persist Security Info=False;User ID=phuc-sa;Password=123456Abc;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+            //@"Server=DESKTOP-E565L04;Database=StockExchanges;User ID=sa;Password=321654;Trusted_Connection=True;"
             //Data Source=phuchoangdinhdbserver.database.windows.net;Initial Catalog=phuchoangdinh_db;User ID=phuc-sa;Password=123456Abc;Connect Timeout=60;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
         }
 

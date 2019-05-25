@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PostService } from '../shared/post.service';
 import { IPostDetailModel } from '../models/post-detail-model';
 import { ActivatedRoute } from '@angular/router';
+import { ICommentModel } from '../models/comment-model';
 
 @Component({
   selector: 'app-post-detail',
@@ -10,8 +11,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PostDetailComponent implements OnInit {
   public postDetailModel: IPostDetailModel;
+  public commentModel: ICommentModel;
+  public Description: string;
   private _postService: PostService;
   private _route: ActivatedRoute;
+
   constructor(
     postService: PostService,
     route: ActivatedRoute,
@@ -31,5 +35,13 @@ export class PostDetailComponent implements OnInit {
       }, error => (error)
     );
   }
-
+  addComment() {
+    this.commentModel.PostId = this.postDetailModel.Id;
+    this.commentModel.Description = this.Description;
+    this._postService.addComment(this.commentModel).subscribe(
+      (data: boolean) => {
+        
+      }, error => (error)
+    );
+  }
 }

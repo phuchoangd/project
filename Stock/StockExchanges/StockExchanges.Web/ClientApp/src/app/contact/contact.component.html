@@ -16,13 +16,13 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input class="form-control" id="name" type="text" name="name" required="required" />
+                      <input class="form-control" id="name" type="text" [(ngModel)]="contactName" name="name" required="required" />
                       <label for="name">Your name</label>
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="md-form">
-                      <input class="form-control" id="email" type="text" name="_replyto" required="required" />
+                      <input class="form-control" id="email" type="text" [(ngModel)]="contactEmail" name="_replyto" required="required" />
                       <label for="email">Your email</label>
                     </div>
                   </div>
@@ -30,19 +30,20 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="md-form">
-                      <input class="form-control" id="subject" type="text" name="subject" required="required" />
+                      <input class="form-control" id="subject" type="text" [(ngModel)]="contactSubject" name="subject" required="required" />
                       <label for="subject">Subject</label>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="md-form">
-                      <textarea class="md-textarea" id="message" name="message" required="required"></textarea>
+                      <textarea class="md-textarea" id="message" [(ngModel)]="contactMessage" name="message" required="required"></textarea>
                       <label for="message">Your message</label>
                     </div>
                   </div>
                 </div>
                 <div class="center-on-small-only mb-4">
-                  <button class="btn btn-indigo ml-0" type="submit"><i class="fa fa-paper-plane-o mr-2"></i> Send</button>
+                  <button class="btn btn-indigo ml-0" type="submit" (click)="sendContact()"><i class="fa fa-paper-plane-o mr-2"></i> Send</button>
+                  <label style="color:green">{{message}}</label>
                 </div>
               </form>
             </div>
@@ -50,15 +51,15 @@
               <ul class="list-unstyled text-center">
                 <li class="mt-4">
                   <i class="fa fa-map-marker indigo-text fa-2x"></i>
-                  <p class="mt-2">140, City Center, New York, U.S.A</p>
+                  <p class="mt-2">City Center, New York, U.S.A</p>
                 </li>
                 <li class="mt-4">
                   <i class="fa fa-phone indigo-text fa-2x"></i>
-                  <p class="mt-2">+ 01 234 567 89</p>
+                  <p class="mt-2">+ 84-355-548-516</p>
                 </li>
                 <li class="mt-4">
                   <i class="fa fa-envelope indigo-text fa-2x"></i>
-                  <p class="mt-2">contact@company.com</p>
+                  <p class="mt-2">phuc_ceh@hotmail.com</p>
                 </li>
               </ul>
             </div>

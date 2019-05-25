@@ -11,15 +11,15 @@ namespace StockExchanges.Web.Controllers
     [Route("api/[controller]")]
     public class PostController : Controller
     {
-        private readonly IPostService _postService;
-        public PostController(IPostService postService)
+        private readonly IcommentService _commentService;
+        public PostController(IcommentService commentService)
         {
-            _postService = postService;
+            _commentService = commentService;
         }
         [HttpGet("[action]")]
         public JsonResult GetAllPosts()
         {
-            var posts = _postService.GetAll()
+            var posts = _commentService.GetAll()
                         .Select(x => new PostViewModel
                         {
                             Id = x.Id,
@@ -35,7 +35,7 @@ namespace StockExchanges.Web.Controllers
         [HttpGet("[action]")]
         public JsonResult Detail(int id)
         {
-            var post = _postService.GetById(id);
+            var post = _commentService.GetById(id);
             var result = new PostDetailViewModel
             {
                 Id = post.Id,

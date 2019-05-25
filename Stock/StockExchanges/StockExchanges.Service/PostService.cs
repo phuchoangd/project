@@ -6,12 +6,12 @@ using System.Text;
 
 namespace StockExchanges.Service
 {
-    public class PostService : EntityService<Post>, IPostService
+    public class commentService : EntityService<Post>, IcommentService
     {
         IUnitOfWork _unitOfWork;
         IPostRepository _postRepository;
 
-        public PostService(IUnitOfWork unitOfWork, IPostRepository postRepository)
+        public commentService(IUnitOfWork unitOfWork, IPostRepository postRepository)
             : base(unitOfWork, postRepository)
         {
             _unitOfWork = unitOfWork;

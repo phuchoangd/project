@@ -5,7 +5,7 @@ using System.Text;
 
 namespace StockExchanges.Service
 {
-    public interface IPostService : IEntityService<Post>
+    public interface IcommentService : IEntityService<Post>
     {
         Post GetById(long Id);
     }

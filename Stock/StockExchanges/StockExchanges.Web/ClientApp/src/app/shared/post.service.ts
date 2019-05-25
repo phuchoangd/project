@@ -1,6 +1,7 @@
 import { Injectable, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable} from 'rxjs';
+import { ICommentModel } from '../models/comment-model';
 
 @Injectable()
 export class PostService {
@@ -21,5 +22,8 @@ export class PostService {
 
   getAllPosts(): Observable<any> {
     return this._httpClient.get(this._baseUrl + 'api/Post/GetAllPosts');
+  }
+  addComment(model: ICommentModel): Observable<any> {
+    return this._httpClient.post(this._baseUrl + 'api/Comment/Add', model);
   }
 }

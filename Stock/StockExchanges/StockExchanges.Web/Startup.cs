@@ -34,7 +34,7 @@ namespace StockExchanges.Web
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IPostRepository, PostRepository>();
-            services.AddTransient<IPostService, PostService>();
+            services.AddTransient<IcommentService, commentService>();
             
             //services.AddScoped<ICommentRepository, CommentRepository>();
             //services.AddScoped<ICommentService, CommentService>();
@@ -87,6 +87,7 @@ namespace StockExchanges.Web
                 if (env.IsDevelopment())
                 {
                     spa.UseAngularCliServer(npmScript: "start");
+                    //spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
             });
         }
